@@ -1,0 +1,28 @@
+class Billete
+{
+	// atributos
+	constructor (valor, cantidad)
+	{
+		//this.imagen = new Image();
+		this.imagen = document.createElement('img');
+		this.valor = valor;
+		this.cantidad = cantidad;
+		this.imagen.src = "billete_100.png";
+	}
+	// metodos
+	mostrar()
+	{
+		return this.imagen;
+	}
+}
+
+var billete = new Billete(50,5);
+
+var res = document.getElementById("resultado");
+
+for(var i = 0; i < 5; i++)
+{
+	var nuevoBillete = billete.mostrar();
+	res.appendChild(nuevoBillete);
+	res.innerHTML += " "; // <<<< porqué es necesario innerHTML para que se repita "la impresión" de los billetes??????
+}

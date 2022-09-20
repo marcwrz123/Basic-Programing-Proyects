@@ -1,0 +1,17 @@
+.cuadro {
+  border: solid 1px black;
+  background-color: transparent;
+  border-radius: 1px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 6px, 20px, 5px #999;
+}
+body{
+  background-color: white;
+}
+strong{
+  color: purple;
+}
+.color_de_fondo {
+  background-color: #ED86FF;
+}

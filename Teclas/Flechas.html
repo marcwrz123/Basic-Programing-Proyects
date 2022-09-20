@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+    <title>Canvas con flechas</title>
+    <link rel="stylesheet" href="cuadro.css">
+  </head>
+  <body>
+    <h1>Dibujo</h1>
+    <p>Mueve las flechas del teclado</p>
+    <p>
+      Escoge el color de tu dibujo:
+      <input type="color" id="color elegido" onchange="get_color()"/><br>
+        <input type="button" value="Borrador" id="borrador"/>
+          <button onclick="location.href = location.href">Limpiar lienzo</button>
+    </p>
+    <p>
+      Velocidad del dibujo (usando las teclas):
+      <input type="button" value="x0.5" id="x0.5"/>
+        <input type="button" value="x1" id="x1"/>
+          <input type="button" value="x1.5" id="x1.5"/>
+            <input type="button" value="x2" id="x2"/>
+    </p>
+    <div class="cuadro" id="cuadro">
+      <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+    <script src="Eventos de flechas ARREGLADO AHORA SI.js" charset="utf-8"></script>
+  </body>
+</html>

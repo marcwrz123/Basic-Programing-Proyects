@@ -1,0 +1,92 @@
+body{
+  font-size: 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: sans-serif, serif;
+  text-align: center;
+}
+h1{
+  font-weight: bold;
+}
+button{
+  font-weight: 800;
+  font-family: sans-serif;
+  background-color: pink;;
+  color: black;
+  font-size: 20px;
+  box-shadow: 1px 1px 7px 2px pink;
+  border: pink;
+  margin-top: 2px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-style: oblique;
+}
+input.peso{
+  background-size: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: pink;
+  width: 4.6em;
+  border: pink;
+  margin-left: 8.5px;
+  box-shadow: 1px 1px 7px 2px pink;
+}
+select{
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: bold;
+  background-color: pink;
+  box-shadow: 1px 1px 7px 2px pink;
+  border: pink;
+  margin-left: 10px
+}
+a{
+  color: #E7A2F3;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  /* display: block; */
+}
+a:hover{
+  color: #931EA8;
+  text-decoration: none;
+}
+strong{
+  color: violet;
+}
+b{
+  color: violet;
+}
+header{
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+#imagen-planetas{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin: auto;
+  display: block;
+  box-shadow:  1px 1px 23px 1px pink;
+  margin-top: 13px;
+  border-radius: 8px;
+}
+#result{
+  text-align: centert;
+  margin-left: 35px;
+  margin-right: 35px;
+  font-size: 22.5px;
+  height: 10px;
+}
+.chiquito{
+  font-size: 17.5px;
+  margin-top: 30px;
+}
+.changer{
+  width: none;
+  height: none;
+}
+.urls{
+  margin-bottom: 15px;
+}

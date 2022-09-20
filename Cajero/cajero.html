@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cajero Automatico</title>
+    <link rel="stylesheet" href="cajero.css">
+  </head>
+  <body>
+    <div class="texto">
+      <h1>CAJERO AUTOMATICO</h1>
+      <div class="prueba">
+        <p>Prueba</p>
+      </div>
+    </div>
+    <div class="imagen">
+      <img src="cajero.gif">
+      <p>El MAXIMO DINERO PARA RETIRAR ES DE $745</p>
+      <p>💢NO EXISTEN BILLETES DE $1💢</p>
+    </div>
+    <div class="cuadroDeTexto">
+      <p>
+        <input type="number" name="number" value="number" class="input" id="numero"><br>
+      </p>
+    </div>
+    <div class="botones">
+      <p>
+      <input type="button" name="RETIRAR" value="RETIRAR!!" id="boton">---
+        <button onclick="location.href = location.href">VOLVER A INTENTAR!</button>
+      </p>
+    </div>
+      <p>Cada vez que termine de sacar una cantidad de dinero, apretar el boton (VOLER A INTENTAR!)</p>
+      <p id="caja"></p>
+      <hr>
+    <div class="resultados">
+      <p id="resultado"></p>
+      <p id="resultadoMal"></p>
+    </div>
+    <script src="cajero.js" charset="utf-8"></script>
+  </body>
+</html>
