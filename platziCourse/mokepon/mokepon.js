@@ -29,7 +29,7 @@ function seleccionarMascotaJugador() {
             console.log('hi6');
             break;                   
         default:
-            console.log('no');
+            console.log('Not Really');
             break;
     }
 }
