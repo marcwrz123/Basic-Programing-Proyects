@@ -1,5 +1,6 @@
 let ataqueJugador;
 let ataqueEnemigo;
+let resultado; 
 
 function iniciarJuego() {
     let botonMascotaJugador = document.getElementById('boton-mascota');
@@ -77,7 +78,7 @@ function seleccionarMascotaEnemigo() {
 //Ataques del player
 function ataqueFuego() {
     ataqueJugador = 'FUEGO'; 
-    console.log('player attack ' + ataqueJugador);
+        console.log('player attack ' + ataqueJugador);
     SeleccionAtaqueEnemigo();
 }
 function ataqueAgua() {
@@ -93,26 +94,40 @@ function ataqueTierra() {
     //Ataque del enemigo
 function SeleccionAtaqueEnemigo() {
     let attackSelection = aleatorio(3, 1);  //1F, 2A, 3T
-    console.log('number ' + attackSelection);
+        console.log('number ' + attackSelection);
     if (attackSelection == 1) {
         ataqueEnemigo = 'FUEGO';
-    }
-    else if (attackSelection == 2) {
+    } else if (attackSelection == 2) {
         ataqueEnemigo = 'AGUA';
-    }
-    else if (attackSelection == 3) {
+    } else if (attackSelection == 3) {
         ataqueEnemigo = 'TIERRA';
     }
-    console.log('enemy atack ' + ataqueEnemigo);
-
-    //Ya que aqu[i ya sabemos cual es el ataque de aliado y del enemigo por eso mandamos a llamar la funcion de crearMensaje aqui 
-    crearMensaje();
+    
+    results()
+}
+function results() {
+    if (ataqueJugador == ataqueEnemigo) {
+        resultado = 'EMPATE';
+        crearMensaje(); //Se crea el mensaje de, el ataque de cada uno y el resultado del combate
+    } else if (ataqueJugador == 'AGUA' && ataqueEnemigo == 'FUEGO') {
+        resultado = 'GANASTE';
+        crearMensaje();
+    } else if (ataqueJugador == 'FUEGO' && ataqueEnemigo == 'Tierra ') {
+        resultado = 'GANASTE';
+        crearMensaje();
+    } else if (ataqueJugador == 'TIERRA' && ataqueEnemigo == 'AGUA ') {
+        resultado = 'GANASTE';
+        crearMensaje();
+    } else {
+        resultado = 'PERDISTE';
+        crearMensaje();
+    }
 }
 
 function crearMensaje() {
     let sectionMensaje = document.getElementById('mensajes');  //seccion mensajes del html
     let parrafo = document.createElement('p');  //se crea una etiqueta (elemento) <p>
-    parrafo.innerHTML = 'Tu mascota ataco con ' + ataqueJugador + ', la mascota del enemigo ataco con ' + ataqueEnemigo + ' PENDIENTE';
+    parrafo.innerHTML = 'Tu mascota ataco con ' + ataqueJugador + ', la mascota del enemigo ataco con ' + ataqueEnemigo + ' ' + resultado + '!!!!';
     sectionMensaje.appendChild(parrafo);
 }
 
